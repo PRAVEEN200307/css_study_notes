@@ -1,0 +1,392 @@
+regerence webpage
+ developer.mozila.org
+
+
+what exactly in html
+   ---berners-lee
+   HTML are initials that stand for
+    hyperText Markup language
+ 
+hyper -- this like links that help to transfer
+         you from one document to another document
+
+text --- is what you will use.Real,honest to goodness
+         English letters.
+
+Mark up-- is what you will do . you will write in plan
+          English and then mark up what you wrote.
+
+language-- just a lanuage 
+
+-------------------------
+ what is css?
+   css stands for cascoding style sheets.
+   it is used to style HTML documents to make it good
+    looking.
+  Uses
+  ----
+ *  it is used to style the web document.
+ *  turn oridnary text into good looking text.
+ *  can make webpage as responsive.
+
+Atributes
+--------
+  class ,title
+Element
+-------
+ p,h
+boolearn
+-------
+disabled="disabled"
+head--contaier keyword
+
+
+server Default page names
+--------------------------
+  1.index.html or index.htm
+  2.defult.html or defult.htm
+  3. home.html or home.htm
+
+
+ meta tag -- serch in the google
+
+HTML:6
+    HEADING TAG
+   ------------
+
+        <H1>WELCOME</H1>
+        <H2>WELOCME</H2>
+        <H3>WELCOME</H3>
+        <H4>WELCOME</H4>
+        <H5>WELCOME</H5>
+        <H6>WELCOME</H6>
+        <P>WELCOEME</P>
+
+PARAGRAPH TAG
+---------------
+   THIS IS THE FIRST WEBPAGE <BR></BR> AUTO CONNECT
+
+     <P>SEO FOLLOW THE RULES THE PARAGRAPH TAG</P>
+
+DIVISION TAG
+------------
+   <div class="PRAGRAPH" style="background-color: rgb(224, 199, 199);">
+        <p>   THIUS IS THE FIRST WEBPAGE <BR></BR> AUTO CONNECT </p>
+    </div> 
+
+
+SPAN TAG
+---------
+     SPAN TAG IS A USIGN THE VERY IMPORTANTT TITLE 
+    <H3>SPAN TAG IS A VERY <SPAN style="color: brown;">IMPROTANT</SPAN></H3>
+    
+CSS STYLE
+----------
+    1. INTERNAL CSS
+         <HEAD>
+            <TITLE>FIRST WEBPAGE</TITLE> 
+  
+           <style>
+               span{
+                color: brown;
+               }
+            </style>
+
+           </HEAD>
+
+    2. External css
+           style in the external file
+
+    3. inline  css
+            <H3>SPAN TAG IS A VERY <SPAN style="color: blueviolet;">IMPROTANT</SPAN></H3>
+    
+TEXT FORMATING
+---------------
+   <B>--BOLD
+   <STRONG> --SEMATTC
+   <I>--ITALIC
+   <EM>--EMPHASIZE--html 5
+   <SUP>-- super tag LIKE A SQURE TAG a
+   <sub>---sub element like h20
+   <INS> -- UNDERLINE and insert tag
+   <DEL>--- DELECTED TAG CENTER CODE
+   <MARK>-- MARK TAF USE TO HILIGHT
+
+ENTITLE
+---------
+  &nbsp;-- non braking space
+  lorem -- it a auto generating text;
+  &lt; -- <  or &gt; > greater than
+  &pound
+  &dollar 
+  &#8377;-- indian currency symbol
+
+  > greater then &gt;
+  < less than    &lt;
+  " quotes       &quot;
+  ' apostrophe   &apos;
+  & ampersand    &amp;
+
+iframe
+------
+  sandbox--serch and get knowledge
+  insert the youtube video  and online video
+    <iframe width="560" height="315"
+         src="https://www.youtube.com/embed/I72ies6fiy8" 
+         title="YouTube video player" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         allowfullscreen></iframe>
+
+
+UNorderList
+-------------
+    disc,circle,square,none,decimal,lower-alpha,upper-alpha 
+
+     <ul style="list-style-type:none;">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+     </ul>
+
+Oderlist
+-------
+   A,b,i,I,1
+
+  <ol type="">
+              <li>type 1</li>
+              <li>type 2</li>
+              <li>type 3</li>
+              <li>type 4</li>
+              <li>type 5</li>
+   </ol>
+
+Image
+------
+ width
+ height
+ alt
+ title
+
+ <img src="" 
+ alt="abdulkalam sir" width="350px"  
+ height="340px">
+
+ <figure>
+      <img src="img/favicon.svg" alt="git icons" width="200px" title="this is a git svg file">
+      <figcaption>git icon</figcaption> --serch engin      
+   </figure> 
+
+
+Table
+------
+   <caption>table title</caption>
+    <table border="1">
+           <thead>
+              <tr>
+                <th>S.NO1</th>
+                <th>S.NO2</th>
+                <th>S.NO3</th>
+                <th>S.No4</th>
+              </tr>
+           </thead>
+           <tbody>
+             <tr>
+                <td rowspan="2">react js</td>
+                <td>html</td>
+                <td rowspan="2">react js</td>
+                <td>css</td>
+             </tr>
+             <tr>
+                <td>css</td>
+                <td>html</td>
+             </tr>
+           </tbody>
+           <tfoot>
+                 <tr>
+                    <td colspan="2">java script</td>
+                    <td colspan="2">bootstrap</td>
+                 </tr>
+                 
+           </tfoot>
+       </table>
+        
+Anchor
+-------
+  target-- tag use to open another windows
+  <a href="https://google.com" target="_blank">google clik me</a>
+  title='this is reation hover effort'
+  creating image tag
+  --------------------
+   <a href="https://google.com" target="_blank">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqVgzAjoh4_Axsjr9aNpTGfLwLaEC-8r8qRJBmY2WAgctac0JZxaHY-U4hPVNhASMRr48&usqp=CAU" alt="total_amount"
+      width="200">
+   </a>     
+  move to top using to anchor tag 
+  ----------------------------------
+  <p id="id">paragraph tag</p>
+  <a href="#id">click me move top</a>   
+
+comments
+---------
+   <!--  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, 
+       A vitae repudiandae libero blanditiis?</p> --> 
+
+POST FORMS
+----------
+   required-- this is lik a condition must fill this forms
+   value -- change a button name
+  --------
+   <input type="submit" value="register now">
+
+    <form action="#" meathod="post">
+      <input type="text" placeholder="enter name" name="name" required> <br>
+      <input type="email" placeholder="eamample@gmail.com" name="email"> <br>
+      <input type="text" placeholder="some subject" name="subject"><br>
+      <textarea name="message" id="" cols="30" rows="10" 
+      placeholder="enter your messge"></textarea>
+      <input type="submit" value="register now">
+   </form>
+
+INPUT ELEMENTS
+---------------
+   <HR> -- HORIZONTAL TAG
+ 1. INPUT TEXT
+ 2. INPUT RADIO
+ 3. INPUT CHECKBOX
+ 4. INPUT BUTTON
+ 5. INPUT RESET
+
+<div>
+      <h3>forms input type</h3>
+      <form action="#" method="post">
+         <input type="text" name="username" placeholder="username"><br>
+         <input type="password" name="" id="" placeholder="******"><br>
+         <input type="reset" value="reset" ><br><hr>
+         <input type="radio" name="gender" id="">male
+         <input type="radio" name="gender" id="">female
+         <hr>
+         <input type="checkbox" name="choice">omelet
+         <input type="checkbox" name="choice">potato fry
+         <br>
+         <input type="button" value="button 1">
+      </form>
+ </div>
+
+<label for="">job title would you like</label>  --option 
+    <select name="" id="">
+        <option value="">font end</option>
+        <option value="">back end</option>
+        <option value="">ui/ux</option>
+        <option value="">prograssql</option>
+ </select>
+
+  <select name="distric" id="" style="width: 200px; padding: 10px; color: black;font-size: 20px;">
+     <option value="" selected>select distirick</option>
+     <option value="thiruvanamalai">thiruvanamalai</option>
+     <option value="madurai" >madurai</option>
+     <option value="thiruchi">thiruchi</option>
+     <option value="chennai">chennai</option>
+     <option value="combatore">combatore</option>
+     <option value="pandichery">pandichery</option>   
+   </select>
+
+-----------------------------------------------------------------------------------
+SPECIAL INPUT
+--------------
+  1. COLOR
+  2. DATE
+  3. EMAIL
+  4. MONTH
+  5. NUMBER
+  6. RANGE
+  7. TIME
+  8. URL 
+  6. week
+  7. file
+  8. hidden
+  
+ <div>
+      <h3>HTML 5 SPECIAL INPUT</h3>
+      <form action="#" method="post">
+           <input type="color" name="color" id="">
+           <input type="date" name="date" id="">
+           <input type="email" name="email" id="">
+           <input type="month" name="month" id="">
+           <input type="number" name="phone" id="">
+           <input type="range" name="range" id="">
+           <input type="time" name="time" id="">
+           <input type="url" name="utl" id="">
+           <input type="week" name="" id="">
+           <input type="file" name="file" id="">
+           <input type="hidden" name="hidden">
+      </form>
+  </div>
+
+sematic tag
+-------------
+
+ header
+ artical
+ footer
+ dt-decription title
+ dd--decription detail
+
+
+meta tag
+---------
+  <title>html crouse learn for free</title>
+  <meta name="description" content="html is struture query lanuage">
+  <meta name="author" content="MR PRAVEEN"> 
+  <meta name="keyword" content="html,html5,sematic tag">
+
+datatime
+--------
+ datetime="2020-06-20"
+ datetime="2020-06"
+ datetime="06-20"
+
+icons
+------
+  <link rel="icon" type="image/x-icon" 
+  hef="linux.jpeg"> 
+  ico.file  mostly use it
+
+  <link rel="shortcut icon" 
+  href="img/favicon.svg" 
+  type="image/x-icon">
+
+
+videos
+------
+controls
+<video src="video/rabbit.mp4" 
+controls ></video>
+
+ <video controls width="400"
+ height="400" autoplay loop muted  preload="auto"
+ poster="rabbit.jpeg"> <!---try perload="none"->
+ <source src="rabbit.mp4" type=video/mp4>
+ <source src="rabbit.webm" type=video/webm>
+ </video>
+
+audio
+-----
+ <audio src="./audio/viper.mp3" controls  >
+ </audio>
+ <audio controls>
+   <source src="viper.mp3" type="audio/mp3">
+ </audio>
+
+Control developer tools
+----------------------
+ ctrl+shift+i;
+
+svg
+---
+ <svg width="300" height="200">
+   <rect width="100%" height="100%" fill="green"/>
+ </svg>
+
+
+
+ 
