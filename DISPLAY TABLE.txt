@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUTOR JOES</title>
+  <style>
+    table{
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+
+  <table 
+  border="1px" 
+  cellpadding="10px"
+  cellspacing="10px"
+  width="100%"
+  >
+  <caption>STUDENT DETAILS</caption>
+  <colgroup>
+    <col>
+    <col style="width: 50px;">
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>AGE</th>
+      <th>CITY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ram</td>
+      <td>12</td>
+      <td>Namakkal</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>14</td>
+      <td>Chennai</td>
+    </tr>
+    <tr>
+      <td>Joes</td>
+      <td>30</td>
+      <td rowspan="2">Salem</td>
+    <tr>
+      <td>Tiya</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Tutor Joes</td>
+    </tr>
+  </tfoot>
+  </table>
+</body>
+</html>
+------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* *********************
+        * table-caption
+        * table-header-group 
+        * table
+        * table-row
+        * table-cell
+        * table-footer-group
+        * table-column-group
+        * table-column
+        * table-row-group
+        ***********************/
+        .header{
+            display: table-header-group;
+            background-color: orange;
+            color: #fff;
+        }
+        .table{
+            display: table;
+            border: 1px solid #000;
+            margin-top: 150px;
+            /* width: 600px; */
+        }
+        .trow{
+            display: table-row;
+        }
+        .td{
+           display: table-cell; 
+           /* width:  80px; */
+           border: 1px solid orange;
+           font-size: 15px;
+           padding: 10px;
+        }
+        .footer{
+            display: table-footer-group;
+        }
+       .caption{
+          display: table-caption;
+          text-align: center;
+          color: orange;
+          font-weight: bold;
+
+       }
+       .col-group{
+          display: table-column-group;
+       }
+       .col{
+          display: table-column;
+       }
+       .row-group{
+          display: table-row-group;
+          color: lightcoral;
+       }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="caption">student_detail</div>
+        <div class="col-group">
+            <div class="col"></div>
+            <div class="col" style="width:150px;background-color: lightsteelblue;"></div>
+            <div class="col"></div>
+        </div>
+        <div class="header">
+            <div class="trow">
+                <div class="td">Name</div>
+                <div class="td">age</div>
+                <div class="td">posiition</div>
+            </div>
+        </div>
+        <div class="row-group">
+            <div class="trow">
+                <div class="td">praveen</div>
+                <div class="td">15</div>
+                <div class="td">frontend</div>
+            </div>
+            <div class="trow">
+                <div class="td">raja</div>
+                <div class="td">15</div>
+                <div class="td">frontend</div>
+            </div>
+        </div>
+            
+            <div class="footer">
+                <div class="trow">
+                    <div class="td">raja</div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

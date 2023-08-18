@@ -1,0 +1,335 @@
+flex
+-----
+
+display:flex;
+flex-direction:row;--row column
+                    column-reverse
+                   row-reverse;
+
+div*15>{Box $};
+
+--flex- warp-----
+
+flex-warap:warap;
+           row-reverse;
+
+---flex-flow
+
+flex-flow:direction warap;
+
+--justify content
+ 
+justify-content:;
+  by default : flex-start
+  flex-end;
+  center;
+  space-arround
+  space-even
+  space-between--most use it
+
+
+align items -- working on column
+------------
+  height:400px;
+
+align-items:center;
+            flex-start;
+            flex-end;
+when usig different same baseline:baseline
+width and height
+-------------------------------------
+align-content
+--------------
+  align-content
+       flex-start
+       flex-end
+       center
+       
+order
+-----
+ <div style="order 1">Box 1</div>
+ <div style="flex-grow:1;">Box 1</div>
+   flex-grow: 1234
+  <div style="flex-shrik:1;">Box 1</div>
+          shrik--less the size
+   <div style="flex-basic:20px;">Box 1</div>
+     ex create customer with
+
+
+
+------------------------
+flex-container{
+  background-color: rgba(245, 132, 20, 0.931);
+  display: flex;
+  height: 400px;
+
+   /* flex-pratice */
+   /* flex-direction:row-reverse; */
+   
+    /* warap   deafult no warap */
+    /* flex-wrap: wrap;  
+    flex-direction: row-reverse; */
+
+  /* flex flow */
+   flex-flow: column wrap;
+
+  /* align-items */
+   /* justify-content: center; */
+   /* align-items:flex-start; */
+
+    /* align-items: center; */
+    align-content: center;
+
+} 
+.flex-container>div{
+  background-color:hsla(0, 34%, 87%, 0.709);
+  color: black;
+  padding: 30px;
+  margin-top: 10px;
+  margin-right:5px;
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid rebeccapurple;
+}
+
+-----------------------------------
+Css Flex Container properties
+
+display
+flex-direction
+flex-wrap
+flex-flow
+column-gap
+row-gap
+gap
+justify-content
+align-items
+align-content
+
+
+css Flex item Properities
+order
+flex-grow
+flex-shrink-- shirk(reduce the size) in extra when responsive
+flex-basis
+flex
+align-self
+
+---------------
+
+display:inline-flex;
+
+column-gap:;
+row-gap:;
+gap:<row-gap> <column-gap>;
+gap:40px;
+
+/ flex-grow ,flex-shrink,flex-basis
+/ flex-grow,flex-basis
+/ flex-grow
+flex:0 1 auto;
+
+
+
+
+
+
+what is linux
+what is unix
+are they same (linx,unix)
+why should i learn 
+is it useful for me?
+is it flexiable for government laptop
+
+
+grid
+-----
+
+.css Grid is a powerful tool that allows
+for two-dimensional layouts to be created
+on the web.
+.By using ROW AND COLUMNS ,grid makes it
+is easier to design web page layours,
+align and distribute space amoung
+items in a grid.
+.flexbox is for one dimension layout
+
+CSS GRID CONTAINER PROPERITES
+------------------------------
+. display
+. grid-template-columns
+. grid-template-rows
+. grid-template
+. column-gap
+. row-gap
+. gap
+. justify-items
+. align-items
+. place-items
+. justify-content
+. align-content
+. place-content
+. grid-auto-columns
+. grid-auto-rows
+. grid-auto-flow
+
+CSS GRID ITEM PROPERTIES
+------------------------
+
+.grid-column-start
+.grid-column-end
+.grid-column
+.gird-row-start
+.gird-row-end
+.grid-row
+.justify-self
+.align-self
+.place-self
+
+---------------
+
+display:grid;
+display:inline-grid;
+
+
+GRID TEMPLATE COLUMNS
+--------------------
+display:grid;
+gird-template-columns:100px 200px 300px;
+gird-template-columns:200px 200px 200px;
+gird-template-columns:repeat(3,200px);
+gird-template-columns:repeat(3,200px) 300px;
+--frational------
+grid-template-column:1fr 2fr 1fr;
+gird-template-column:repeat(3,minmax(200px,1fr));
+
+GRID TEMPLATE ROWS
+------------------
+display:grid;
+height:600px;
+gird-template-columns:repeat(3,1fr);
+
+
+grid-template-rows:100px;
+grid-template-rows:100px 150px 200px;
+grid-template-rows:repeat(3,100px);
+grid-template-rows:repeat(3,1fr);
+
+GRID TEMPLATE
+-------------
+
+height:600px;
+
+grid-template: row / columns;
+
+grid-template:repate(3,1fr)/repate(4,1fr);
+
+
+COLUMN-GAP,ROW-GAP,GAP
+----------------------
+ column-gap: 10px;
+    row-gap: 40px;
+    gap: 40px 10px;
+
+JUSTIFY -ITEMS
+--------------
+ justify-items: stretch;
+    justify-items:start;
+    justify-items: center; 
+    justify-items: end; 
+
+ALIGN-ITEMS
+------------
+    align-items: stretch;
+    align-items: start;
+    align-items: center;
+    align-items: end;
+
+PLACE-ITEMS
+-----------
+ /* place-items=  align-items , justify-items */
+    place-items:center end;
+    place-items:end;
+ 
+justify-content
+---------------
+x-axis
+justify-content: start;
+justify-content: center;
+justify-content: end;
+justify-content: space-around;
+justify-content:space-between;
+justify-content:space-evenly; 
+
+align-content
+--------------
+ align-content
+   flex-start
+   flex-end
+   center
+   space-around
+   space-between
+   space-evenly
+
+place-content
+--------------
+ /* align-content, justify-content */
+    place-content: start end;
+    place-content: center;
+
+GRID-AUTO
+---------
+  grid-flow
+  grid-auto-row
+  grid-auto-column
+
+    grid-auto-flow:row;
+    grid-auto-rows: 100px;
+
+    grid-auto-flow:column;
+    grid-auto-columns: 400px;    
+
+
+CSS GRID ITEM PROPERTIES
+------------------------
+
+GRID COLUMN
+-----------
+ grid-column-start:1;
+   grid-column-end: 3;
+   grid-column: 1/3;
+   grid-column: 1/span 2;
+
+GRID ROW
+---------
+   grid-row-start: 1;
+   grid-row-end: 3;
+   grid-row: 1/span 2;
+
+
+justify-self
+-----------
+   start
+   center
+   end
+align-self
+----------
+   start
+   center
+   end
+place-self
+----------
+   align-items justify-items
+
+place-self:center;
+place-self:center  end;
+
+
+
+
+
+
+
+
+
+

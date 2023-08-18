@@ -1,0 +1,87 @@
+Type 1
+------
+ span[title]{
+   color: red; 
+}
+ 
+span[alt]
+{
+    color: red; 
+}
+type 2
+------
+span a[target="_blank"]
+{
+    background-color: green;
+} 
+
+type 3
+-----
+
+  span[title~="Country"]{  
+                           -- match a word
+    color: violet;
+  }
+  span[title~="India"]{
+    background-color: violet;
+  }
+ 
+  [title~=linux] {
+  border: 5px solid red;
+  }
+
+type 4
+------
+  [class|="content"]--match any word but it is
+                      unique(top-header)
+  {
+    color: yellow;  // |--pipe operator
+  }  
+
+type 5
+------
+  [class^="content"]  // start with
+  {
+   color: #ffa500;
+  } 
+
+ [class$="footer"]{ //end with
+    /* --foooter--end with */
+    background-color: rgb(128, 51, 0);
+ }
+
+global selector
+---------------
+[class*="-"]{
+    background-color: green ;
+}
+
+5.3. nth of type selectors:
+--------------------------
+/* Selects the second element of div siblings */
+div:nth-of-type(2) {
+  background: red;
+  color: yellow;
+}
+
+/* Selects the second li element in a list */
+li:nth-of-type(2) {
+  background: lightgreen;
+  color: red;
+}
+
+/* Selects every third element among any group of siblings */
+:nth-of-type(3) {
+  background: yellow;
+}
+
+:nth-of-child()odd,even,3
+{
+}
+
+BOX-SHADOW
+-----------
+box-shadow:vertial bottom opacity spread;
+
+
+

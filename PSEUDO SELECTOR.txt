@@ -1,0 +1,144 @@
+:root pseudo selector
+---------------------
+:root{
+    --bg-color:#7d8d8d;
+    --color:rgb(31, 31, 158);
+    --padding:30px;
+}
+p{
+    background-color: var(--bg-color);
+    padding: var(--padding);
+    margin: 10px;
+    color:var(--color);
+}
+
+--------------------------------------------
+css pseudo first and last selector
+
+must have parent class
+:first-child{}
+:last-child{}
+
+peudo class selector |nth-child|nth-last-child
+:nth-child(){
+  
+  n=0,1,2,3,4
+  --odd
+  --even
+  2n
+   2*0=0
+   2*1=2
+   2*2=4
+   2*3=6
+   
+  2n+1
+   (2*0)+1=0
+   (2*1)+1=3
+   (2*2)+1=5
+   (2*3)+1=7
+   
+  3n-1
+   (3*0)-1=0
+   (3*1)-1=2
+   (3*2)-1=5
+   (3*3)-1=8
+}
+
+:nth-last-child(){
+
+}
+:nth-of-type,:nth-last-of-type
+------------------------------
+note:Selecting element don't have parent
+apply the parent and non parent
+:nth-of-type()--it working a parent class and non parent
+:nth-last-of-type()
+
+:only-child
+------------
+note:only have one child in parent class
+:only-child(){
+}
+
+:only-of-type()
+-----------
+NOTE:don't have parent but only one element
+condition:must have one element and including parent
+
+all parent have one attribute
+:only-of-type()
+{
+}
+
+----------------------
+:first-of-type()
+:last-of-type()
+-------------------------------
+classs selector :empty
+---------------
+if any empty is get selected
+ P:empty{
+}
+
+----------------------
+css pseduo classs slector:not
+------------------------------
+        p.para{
+          color: #ff0000;
+          font-size: 20px;
+        }
+        p:not(.para){
+            color: blue;
+        }
+
+ <p class="para">Lorem ipsum dolor
+ sit  </p>
+-------------------------------
+:lang
+------
+lang="eng"
+
+ p:lang(fr){
+           color:#e5e826;
+       }
+
+<p lang="eng">Lorem ipsum 
+dolor Id, sequi? Animi
+nostr rsequatur pariatur alias?</p>
+
+-----------------
+:link :hover :visited :active
+
+-----------------------
+:target
+ p:target{
+         background-color: lightcoral;
+         font-weight:bold;
+         padding: 20;
+      }
+ <a href="#para1">para-1</a>
+ <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quia, sunt iure nostrum inventore totam numquam dicta facere possimus eaque dignissimos dolor enim cum vero natus porro blanditiis. Laudantium, illo.</p>
+---------------------
+from element css pseudo selector
+-----------------------------
+
+:focus
+:checked
+:enable --notmal textbox
+:disable
+:required
+:read-only
+:read-write
+:valied
+:invalied
+:defult 
+ checkbox  checked
+ option      selected
+
+
+:is()
+
+
+
+
+

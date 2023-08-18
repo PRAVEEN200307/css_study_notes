@@ -1,0 +1,49 @@
+Transition in css
+------------------
+transition-property
+transition-duration
+transition-delay
+transition-timing-function
+
+ease          start slow-fast->end slowly
+linear        Maintain Same speed from start to end
+ease-in       slow-start
+ease-out      slow-end
+ease-in-out   slow start and End
+step-stat
+step-end
+step(4,end)
+cubic-bezier  we can create with own values
+
+transition
+
+<style>
+     div{
+        width:300px;
+        height:300px;
+        background-color:orangered;
+/* 
+        transition-property: width;
+        transition-duration:0.5s;
+        transition-timing-function: ease-in-out; */
+        
+        /* transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay:0.5s; */
+        /* border:2px solid #000; */
+
+        transition:all 0.5s ease-in 1s ;
+     }
+     div:hover{
+       width:600px;
+       height: 600px;
+       background: purple;
+       /* border: 5px dotted #ff0000; */
+     }
+  </style>
+
+<body>
+  <div> </div>
+</body>
+

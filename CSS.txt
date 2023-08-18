@@ -1,0 +1,509 @@
+WHAT IS CSS
+  .Cascoding Stylesheet
+  .Not a programming language.
+  .Stylesheet/styling lanuage.
+  .Used for website layout and design.
+  .can be extended with sass/less;
+
+different type of css
+   .inline css
+   .internal css
+   .external css
+     ./css/style.css
+
+css colors
+----------
+  #800000 -dark red
+  #008000 -dark green
+  #000080 -dark blue
+  #808000 -dark yellow
+  #800080 -dark magents or pink
+  #008080 -dark cyan
+  #808080 -gray;
+
+  #RRGGBB --#FF0000
+  
+FONT
+----
+ .FONT-FAMILY:"Times New Roman",Times,serif;
+  font-size:35px;
+  font-style:italic;
+  font-weight:bold;
+  font(shorthand)  -- single line
+
+ using google font
+ -----------------
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     font-family:'josefin Sans',sans-serif;
+     p span{
+       font-weight:bold;
+    }
+
+CSS SELECTORS[CLASS,ID]
+------------------------
+ *      is a global selector
+.class  class using same div multiple name
+ #id    unique
+
+<div class="selecting demo" id="demo"> 
+</div>
+
+p span{
+    font-weight:bold;
+}
+.selecting p
+{
+    background-color: brown;
+}
+.demo > p{
+    color:#ffff;
+}
+
+----------------------------------------------------------------------------------------------------
+background-color
+----------------
+  -background-color
+  -background-image
+  -background-repeat ---repeat-x,repeat-y,no-repeat
+  -background-position:; top right 
+  -background-size:500 400;   --contain,cover-important
+  -background: teal url('') no-repeat;
+  -background-attachment:;-defult-scroll,attach
+  -background-origin:;
+       -content-box;
+       -border-box;
+       -padding-box;
+
+   clip-- text background
+------------------------------
+   color:transparent;
+   background-clip:text;
+   -webkit-background-clip:clip;  
+
+   GRADIENT COLOR
+----------------------
+   linear-gradient
+   repeating-linear-gradient
+   radial-gradient
+   repeating-radial-gradient
+   conic-gradient
+   repeating-conic-gradient
+
+BORDER
+------
+ 1.style
+ 2.width
+ 3.color
+ 4.radius
+ 5.border slides
+ 6.border-Shorthand property
+    .border-width
+    .border-style
+    .border-color
+
+border-style:;
+border-width:;
+border-color:;
+border-radius:;
+
+border-top:dotted;
+border-right: solid;
+border-bottom: dashed;
+border-left: solid;
+
+border:5px solid red;
+cursor: pointer;
+
+.demo  button{
+    background-color: #ffa500;
+    color:#fff;
+    border-style:solid ;
+    border-width:2px;
+    border-top:dotted;
+    border-right: solid;
+    border-bottom: dashed;
+    border-left: solid;
+    border-radius:12px;
+    border-color:#ad6c7a;
+    border: none;
+}
+--------------------------------------
+box-model
+----------
+   -center content
+   -padding
+   -border
+   -margin
+
+------------------------------------------
+margin
+------
+  margin-top:;
+  margin-bottom:;
+  margin-right:;
+  margin-left:;
+
+ margin: 25px 50px 75px 100px;
+  . top margin is 25px
+  . right margin is 50px
+  . bottom margin is 75px
+  . left margin is 100px
+
+  margin:25px 50px 75px 100px;
+  
+margin: 25px 50px 75px;
+  . top margin is 25px
+  . right and left margins are 50px
+  . bottom margin is 75px
+
+ margin:25px 50px 75px;
+
+margin: 25px 50px;
+  . top and bottom margins are 25px
+  . right and left margins are 50px
+
+margin:25px 50px;
+margin:-87px;
+----------------------------------------------------------------------------------------------------------
+padding
+-------
+ padding is a same as margin
+
+
+css width & Height
+-------------------
+  width and height---by defult auto
+  max-width:500px;
+  height:500px;
+
+outline
+-------
+   it is like a border
+   outline:2px solid orange;
+
+Text formating
+---------------
+      shadow
+      -------
+        text-shadow:3px 2px red;
+text-align:center;
+text-align:right;
+text-align:justify;*
+text-decoration:overline;
+                line-through
+                underline
+text-trasform:uppercase;
+              lowercase;
+              capitalize;
+text-indent:50px; -- use all the element
+letter-spacing:3px;- a b c d
+line-height:0.8; 1.8 ---defult 1 direction:rtl;
+word-spacings:10px;
+vertial-align:;--sup under the text   ,super it is like a square
+-----------------------------------------------------------
+css icons
+----------
+     <div >
+           <ol style="list-style-type: none;">
+            <h1>
+                   <i class="fa-brands fa-youtube">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-github"></i>    
+            </h1>  
+           </ol>
+     </div>
+
+------------------------------------------------------------------------------------------------
+css links
+----------
+
+link state
+   link
+   visited
+   hover
+   active
+
+
+------------------------------
+css lists
+---------
+  list-style-position:inside;--outside-default
+  list-style-image:url();
+  list-style-type:disc,circle;
+  
+
+-------------------------------------
+css table
+--------
+ <table border="1">
+ overflow-x:auto;
+ border-collapse:collapse;
+ cellpadding="10px"
+ cellspacing="10px"--like a margin
+ <caption> </caption> 
+ <thead><tbody>
+ <tfoot>
+   <colgroup>-- only for background-color,width
+     <col style="width:150px">
+     <col style="width:50">
+     <col>
+   </colgroup>
+   td:nth-of-type(even){  
+   }
+   colspan
+   rowspan
+-------------------------------------
+css display
+-----------
+   display:inline
+       ex one two three
+   display:black;--take a wole with
+   block-level-element --p,h
+   non-black-level-element-span,b
+   display:inline-block;
+  hiding
+  -------
+    <h1 hidden>swiggy</h1>
+    display:none
+    visibility:hidden;
+
+
+-------------------------------------------------
+CSS POSITION TYPES:
+---------------------
+  >Static -- it a normal,default
+  >Relative--it a normal
+     left
+     right
+     top
+     bottom   
+  >Absolute--it absolute valus
+    relative
+  >Fixed --it a like a uses of footer
+  >sticky--it a uses of bottom
+----------------------------------------------------------
+css float
+----------
+  float:left
+  float:right
+  clear:both;
+
+------------------------------------------
+css combinators
+----------------
+ .descendent selector(space)
+
+     div p{
+      color: red;
+     }
+ . child selector(>)
+
+      #adjacent-selector >h2{
+         color: green;
+      }
+ . adjacent sibling selector(+)
+
+     #adjacent-selector+h2
+     {
+       color:rgb(124, 128, 0);
+     }
+ . general sibling selector(~) 
+
+    #adjacent-selector~h2
+    {
+     color:rgb(124, 128, 0);
+    }
+
+------------------------------------
+pseudo-element
+
+::fist-line
+::first-letter
+::before
+::after
+::selection
+::-moz-selection
+::placeholder
+
+.psuedo-elements >p::first-line
+{
+  color: red;
+}
+.psuedo-elements >p::first-letter
+{
+  color: red;
+}
+.psuedo-elements >h1::after      
+{
+  content: ":)";
+}
+
+.psuedo-elements >h1::before      
+{
+  content: "serias name";
+}
+
+::selection{
+    background-color:red;
+}
+::-moz-selection{
+    background-color:red;
+}
+
+----------------------------------------------------------
+opacity
+-------
+  opacity:; ---0.1-1.0
+  0.5 ,1 more use this size
+ internal explolare
+  filter:alpha(opacity=50); 
+---------------------
+
+CSS Attributes selectors
+------------------------
+  this is noted by seprate notes
+
+
+
+-------------------------------------------------------
+CSS counters
+------------
+  
+body{
+    counter-reset: videos;
+  }
+
+h2::before{
+    counter-increment:videos;
+    content:"videos #"counter(videos)
+  }
+
+-----------------------------------------
+media quary
+-----------
+ all media type --defult
+ screen media type--mobile tablet-most default screen
+ printer media type
+ Screenreder media type
+
+@media screen and (max-width:900px){
+    body{
+        background-color:lightcoral;
+    }
+  }
+
+  @media screen and (max-width:600px){
+    body{
+        background-color:rgb(232, 20, 204);
+    }
+  }
+
+
+
+------------------------------------------------------
+units
+-------
+px
+em
+rem
+vw
+vh
+----------------
+css priority
+-------------
+
+first priority
+ id
+secound priority
+ class
+third priority
+ elemet --p,h3
+fourth priority
+  *- global 
+
+
+---------------------------------------
+inherit  -- this is depend on the parent
+---------
+span{
+ color:red;
+}
+.extract span{
+  color:inherit;
+}
+------------------------------------------------
+initial--- going to deafult html format
+-------
+h1{
+  color:initial;
+}
+---------------------------------------------
+revert
+------
+i have a choice but i am apseat parent suggestion
+
+-----------------------------------------------------
+z-index:-1;
+
+
+---------------------------------------------------------------------
+overflow
+---------
+over-flow:visible;--default
+over-flow:hidden;
+over-flow:scroll;
+over-flow:auto;
+over-flow-x:scroll;
+over-flow-y:scroll;
+
+
+------------------------------------
+unit
+px
+%-- depant the parent
+em-- default 16px if have parent
+     depend on the parent size
+rem--root em depend the html tag
+     <html>size:14px;</html>
+vh--
+    device width and height
+vw--
+vmax
+vmin 
+--------------------------------------
+css display table
+-----------------
+        * table-caption
+        * table-header-group 
+        * table
+        * table-row
+        * table-cell
+        * table-footer-group
+        * table-column-group
+        * table-column
+        * table-row-group
+----------------
+box-sizing
+---------
+box-sizing:content-box;
+box-content:border-box;
+
+
+---------------------
+columnn
+--------
+column-count:3;
+column-width:150px;
+column-gap:50px;
+
+column-rule-width:5px;
+column-rule-color:red;
+column-rule-style:solid;
+column-rule:2px dashed red;
+
+-------------------------------
+
+
+
